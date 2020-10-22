@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>Basic Template</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <style>
+        .response-item {
+            display: inline-block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-wrap: normal;
+            overflow: hidden;
+            position: relative;
+            padding-right: 35px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<h1 class="uk-text-center">For long breadcrumb</h1>
+<div class="uk-width-5-6 uk-margin-auto">
+<ul id="breadcrumb" class="uk-breadcrumb" itemprop="breadcrumb">
+    <li><a href="">Lorem Ipsum</a></li>
+    <li><a href="">is simply dummy</a></li>
+    <li><a href="">text of the printing and typesetting</a></li>
+    <li><a href="">standard</a></li>
+    <li><a href="">standard dummy text</a></li>
+    <li><a href="">ever since the 1500s, when an unknown</a></li>
+    <li><a href="">been the industry's standard dummy text ever since</a></li>
+    <li><span>when an unknown printer took a galley</span></li>
+</ul>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="responsive-bread.js"></script>
+<script>
+    $('#breadcrumb').responsiveBcrumb();
+</script>
+
+</body>
+</html>
